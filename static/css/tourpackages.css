@@ -1,0 +1,147 @@
+.responsive-widths {
+  width:99%;
+  margin: 0 auto;
+}
+
+#tourpackages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tourpackage {
+  border: 1px solid silver;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  max-width: 800px;
+  animation-name: tourpackage;
+  animation-duration: 1s;
+}
+
+@keyframes tourpackage {
+  0% {opacity: 0;}
+  100% {opacity: 100%;}
+}
+
+.duration {
+  font-size: 14px;
+  margin-bottom: 1rem;  
+}
+
+.description {
+  color: gray;
+  font-size: 15px;  
+}
+
+.tourpackage_thumbnail {
+  width: 75px;
+  height: 75px;
+}
+
+.tourpackage_info_wrapper {
+  padding: 10px;
+}
+
+.tourpackage-name {
+  font-family: 'Gotham Bold', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  color: #2f3542;
+}
+
+#hassle-free-banner {
+  background-color: #00a8ff;  
+}
+
+#hassle-free-banner > img {
+  padding: 3% 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-style: none;  
+}
+
+h1 {
+  font-size: 22px;
+  font-family: 'Gotham Bold', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  padding: 15px 0;
+}
+
+h2 {
+  font-family: 'Gotham Bold', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  color: #2f3542; 
+}
+
+#found {
+  width: 100%;
+  text-align: right;
+  color: #3498db;
+   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;  
+}
+
+
+.footerwrapper {
+  font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; 
+}
+
+.footerwrapper > a {
+  display: block;
+}
+
+.pricewrapper {
+  line-height: 1.3rem;
+  transform: rotate(-3deg);
+}
+
+.price {
+  font-size: 1.3rem;
+  color: #2ecc71;
+  text-align: right;  
+}
+
+.price::before {
+  content: "Php ";
+}
+
+.pricestarts {
+  color: #c0392b;
+  font-size: .9rem;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  .responsive-widths  {
+    width:99%;
+    margin: 0 auto;
+  }
+  .tourpackage_thumbnail {
+    width: 125px;
+    height: 125px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .responsive-widths  {
+
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+}
